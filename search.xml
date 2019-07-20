@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Iris drawing]]></title>
+    <url>%2F2019%2F07%2F20%2FIris-drawing%2F</url>
+    <content type="text"><![CDATA[Art exhibition Take the place]]></content>
+      <categories>
+        <category>Iris</category>
+      </categories>
+      <tags>
+        <tag>Art</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo add search]]></title>
     <url>%2F2019%2F07%2F20%2FHexo-add-search%2F</url>
     <content type="text"><![CDATA[Use local search with NexT theme to enable search on blog. Installation1$ npm install hexo-generator-searchdb --save Hexo ConfigAdd in _config.yml 12345search: path: search.xml field: post format: html limit: 10000 NexT ConfigIn _config.xml of NexT theme, enable local search. 1234567891011# Local search# Dependencies: https://github.com/theme-next/hexo-generator-searchdblocal_search: enable: true # if auto, trigger search by changing input # if manual, trigger search by pressing enter key or search button trigger: auto # show top n results per article, show all results by setting to -1 top_n_per_article: 1 # unescape html strings to the readable one unescape: false Access searchAfter “hexo g” and “hexo d”, search button will be added in homepage.]]></content>
