@@ -124,6 +124,17 @@
 
 
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144175182-1"></script>
+  <script>
+    var host = window.location.hostname;
+    if (host !== "localhost" || !) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-144175182-1');
+    }
+  </script>
+
 
 
 
@@ -338,6 +349,18 @@
           
             
             
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/20/Hexo-Blog-Set-Up/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/20/Hexo-Blog-Set-Up/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -502,6 +525,18 @@
 
           
             
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/2019/07/20/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/07/20/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -769,6 +804,8 @@
 
 
 
+  
+
 
 
   
@@ -779,6 +816,9 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/reading_progress/reading_progress.js"></script>
 
 
 
@@ -810,6 +850,21 @@
   
 
   
+  
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+
+
+
 
 
 
