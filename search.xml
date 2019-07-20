@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo Google Analytics]]></title>
+    <url>%2F2019%2F07%2F20%2FHexo-Google-Analytics%2F</url>
+    <content type="text"><![CDATA[Add Google AnalyticsApply Google Analytics ID starting from “UAxxx”.Configure _config.yml. 123google_analytics: tracking_id: $&#123;your-google-anlytics-id&#125; localhost_ignored: false Need to set localhost_ignored either true or false by uncomment. Otherwise, it won’t work. Looks like there’s no default value which will case js error not sending stats out.]]></content>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Analytics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Iris drawing]]></title>
     <url>%2F2019%2F07%2F20%2FIris-drawing%2F</url>
     <content type="text"><![CDATA[Art exhibition Take the place]]></content>
