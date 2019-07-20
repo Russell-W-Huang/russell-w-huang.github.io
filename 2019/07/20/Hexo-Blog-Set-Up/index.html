@@ -94,14 +94,14 @@
 </script>
 
   <meta name="description" content="Set up blog with Hexo, Next theme, github. Blog set upInstall Hexo1npm install -g hexo-cli  Create blog dir1hexo init blog  After installation, _config.yml is important under dir. Basic setting of web">
-<meta name="keywords" content="Blog, Hexo">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Blog Set Up">
 <meta property="og:url" content="https://russell-w-huang.github.io/2019/07/20/Hexo-Blog-Set-Up/index.html">
 <meta property="og:site_name" content="Russell Huang">
 <meta property="og:description" content="Set up blog with Hexo, Next theme, github. Blog set upInstall Hexo1npm install -g hexo-cli  Create blog dir1hexo init blog  After installation, _config.yml is important under dir. Basic setting of web">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-20T02:30:11.436Z">
+<meta property="og:updated_time" content="2019-07-20T04:32:16.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Blog Set Up">
 <meta name="twitter:description" content="Set up blog with Hexo, Next theme, github. Blog set upInstall Hexo1npm install -g hexo-cli  Create blog dir1hexo init blog  After installation, _config.yml is important under dir. Basic setting of web">
@@ -325,7 +325,7 @@
                 
               
 
-              <time title="Created: 2019-07-20 12:21:20 / Modified: 12:30:11" itemprop="dateCreated datePublished" datetime="2019-07-20T12:21:20+10:00">2019-07-20</time>
+              <time title="Created: 2019-07-20 12:21:20 / Modified: 14:32:16" itemprop="dateCreated datePublished" datetime="2019-07-20T12:21:20+10:00">2019-07-20</time>
             </span>
           
 
@@ -374,10 +374,21 @@
 
 <h3 id="Create-blog-dir"><a href="#Create-blog-dir" class="headerlink" title="Create blog dir"></a>Create blog dir</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
 
-<p>After installation, _config.yml is important under dir. Basic setting of website,<br>e.g., title, description, keywords, etc.<br>Finish config change, in blog dir, exec</p>
+<p>After installation, _config.yml is important under dir. Basic setting of website, e.g., title, description, keywords, etc.<br>Finish config change, in blog dir, exec</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p>local mode has been started. Can be accessed through <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
+<h3 id="Integete-with-github"><a href="#Integete-with-github" class="headerlink" title="Integete with github"></a>Integete with github</h3><p>github provided github.io to enable website build. Create a public repo with your ${github_account}.github.io.</p>
+<h4 id="addon-for-hexo"><a href="#addon-for-hexo" class="headerlink" title="addon for hexo"></a>addon for hexo</h4><p>Install hexo-deployer-git.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>Configure your github repo in _config.yml</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/Russell-W-Huang/russell-w-huang.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h4 id="deploy-blog-to-github-repo"><a href="#deploy-blog-to-github-repo" class="headerlink" title="deploy blog to github repo"></a>deploy blog to github repo</h4><p>exec</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>Be exited to see website through https://${github_account}.github.io</p>
 
       
     </div>
@@ -408,7 +419,7 @@
         
         <div class="post-tags">
           
-            <a href="/tags/Blog-Hexo/" rel="tag"># Blog, Hexo</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
         </div>
       
@@ -551,7 +562,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Blog-set-up"><span class="nav-number">1.</span> <span class="nav-text">Blog set up</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Hexo"><span class="nav-number">1.1.</span> <span class="nav-text">Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-blog-dir"><span class="nav-number">1.2.</span> <span class="nav-text">Create blog dir</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Blog-set-up"><span class="nav-number">1.</span> <span class="nav-text">Blog set up</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Hexo"><span class="nav-number">1.1.</span> <span class="nav-text">Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-blog-dir"><span class="nav-number">1.2.</span> <span class="nav-text">Create blog dir</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Integete-with-github"><span class="nav-number">1.3.</span> <span class="nav-text">Integete with github</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#addon-for-hexo"><span class="nav-number">1.3.1.</span> <span class="nav-text">addon for hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#deploy-blog-to-github-repo"><span class="nav-number">1.3.2.</span> <span class="nav-text">deploy blog to github repo</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
