@@ -93,18 +93,15 @@
   };
 </script>
 
-  <meta name="description" content="Use local search with NexT theme to enable search on blog. Installation1$ npm install hexo-generator-searchdb --save  Hexo ConfigAdd in _config.yml 12345search:  path: search.xml  field: post  format:">
-<meta name="keywords" content="Hexo">
+  <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo add search">
 <meta property="og:url" content="https://russell-w-huang.github.io/2019/07/20/Hexo-add-search/index.html">
 <meta property="og:site_name" content="Russell Huang">
-<meta property="og:description" content="Use local search with NexT theme to enable search on blog. Installation1$ npm install hexo-generator-searchdb --save  Hexo ConfigAdd in _config.yml 12345search:  path: search.xml  field: post  format:">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2019-07-20T06:21:07.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo add search">
-<meta name="twitter:description" content="Use local search with NexT theme to enable search on blog. Installation1$ npm install hexo-generator-searchdb --save  Hexo ConfigAdd in _config.yml 12345search:  path: search.xml  field: post  format:">
 
 
 
@@ -461,17 +458,17 @@
       
 
       
-        <p>Use local search with NexT theme to enable search on blog.</p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+        <html><head><meta name="generator" content="Hexo 3.9.0"></head><body><p>Use local search with NexT theme to enable search on blog.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="Hexo-Config"><a href="#Hexo-Config" class="headerlink" title="Hexo Config"></a>Hexo Config</h2><p>Add in _config.yml</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  <span class="built_in">limit</span>: 10000</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="NexT-Config"><a href="#NexT-Config" class="headerlink" title="NexT Config"></a>NexT Config</h2><p>In _config.xml of NexT theme, enable local search.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span></span><br><span class="line">local_search:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># if auto, trigger search by changing input</span></span><br><span class="line">  <span class="comment"># if manual, trigger search by pressing enter key or search button</span></span><br><span class="line">  trigger: auto</span><br><span class="line">  <span class="comment"># show top n results per article, show all results by setting to -1</span></span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  <span class="comment"># unescape html strings to the readable one</span></span><br><span class="line">  unescape: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/hexo-generator-searchdb</span></span><br><span class="line">local_search:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  <span class="comment"># if auto, trigger search by changing input</span></span><br><span class="line">  <span class="comment"># if manual, trigger search by pressing enter key or search button</span></span><br><span class="line">  trigger: auto</span><br><span class="line">  <span class="comment"># show top n results per article, show all results by setting to -1</span></span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  <span class="comment"># unescape html strings to the readable one</span></span><br><span class="line">  unescape: <span class="literal">false</span></span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="Access-search"><a href="#Access-search" class="headerlink" title="Access search"></a>Access search</h2><p>After “hexo g” and “hexo d”, search button will be added in homepage.</p>
-
+</body></html>
       
     </div>
 
@@ -603,7 +600,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
